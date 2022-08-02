@@ -1,0 +1,41 @@
+body {
+    color: #DDBBADff;;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin: 0; 
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: Cosmic;
+    font-size: 50px;
+}
+#title{
+    text-shadow: 5px -5px 5px black;
+}
+#hero{
+    background-image: url("https://media4.giphy.com/media/13cxHLqRer5q6s/giphy.gif?cid=ecf05e47af7avpy0w7xoputlsd9jist99m7i9ci57idcodxw&rid=giphy.gif&ct=g");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 40px 0 160px 0; 
+}
+.btn {
+    padding: 10px 14px;
+    background: white;
+    border: none;
+    font-family: Cosmic;
+    font-size: 50px;
+    border-radius: 15px;
+    /* font-family: 'Orbitron', sans-serif; */
+}
+
+@font-face {
+    font-family: Cosmic;
+    src: url("SFCosmicAge.ttf");
+}
+
+.underline {
+    border-bottom: 6px solid white;
+}
+
+#main-logo{
+    width: 200px;
+}
+
