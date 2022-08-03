@@ -1,0 +1,92 @@
+body {
+    text-align: center;
+    font-family: 'Happy Monkey', cursive; 
+    background: linear-gradient(#67d0f0,#f7bfd5); 
+    color: rgb(216, 27, 188);
+    text-shadow: -1px 1px 2px white;
+    
+}
+
+#headshot {
+    width: 150px;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+#bday-age {
+    background: #31dc31;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 20px 0 10px 0;
+   
+}
+
+#bday-date {
+    margin: 0;
+    background: #31dc31;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.gift-section {
+    margin-top: 50px;
+}
+
+.gift-title {
+    margin-bottom: 10px;
+}
+
+.gift-hint {
+    margin-top: 0;
+}
+.gift-img {
+    margin: 0 auto;
+    width: 450px;
+    height: 300px; 
+    border: 1px solid white;
+    border-radius: 10px;
+    background-image: url("giftbox.jpg");
+    background-size: cover;
+}
+
+#gift-img-happy:hover {
+    background-image: url("https://media2.giphy.com/media/YnBntKOgnUSBkV7bQH/giphy.gif");
+}
+
+#gift-img-hot:hover {
+    background-image: url("https://media0.giphy.com/media/MuHJcSI9ySLsrNo59Q/200.gif");
+}
+
+#gift-img-genius:hover {
+    background-image: url("https://media1.giphy.com/media/rq83qwjY0TF40pN56o/giphy.gif");
+}
+
+#gift-img-badass:hover {
+    height:380px;
+    background-image: url("https://thumbs.gfycat.com/AffectionateExcellentKookaburra-size_restricted.gif");
+}
+
+#gift-img-cheers {
+    height:300px;
+    margin-bottom: 80px;
+ 
+}
+
+#gift-img-cheers:hover {
+    background-image: url("https://media1.giphy.com/media/8Iv5lqKwKsZ2g/200.gif");
+}
+
+#footer {
+    width: 400px;
+    margin: 30px auto 50px;
+}
+
+a {
+    color: blue;
+}
