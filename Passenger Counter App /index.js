@@ -1,14 +1,18 @@
 let countEl = document.getElementById("count-el")
+let savelEl = document.getElementById("save-el")
 
-console.log(countEl)
+// console.log(countEl)
 
 let count = 0
 
 function increment(){
-    count = count + 1
-    countEl.innerText = count
+    count += 1
+    countEl.textContent = count
 }
-
 function save(){
-    console.log(count)
+    let countDash = count + " - "
+    savelEl.textContent += countDash
+    countEl.textContent = 0
+    count = 0 
 }
+console.log(count)
