@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    background-color: rgb(25, 25, 69);
+    width: 500px;
+    margin: 0 auto;
+    color: white; 
+    margin-top: 50px; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+} 
