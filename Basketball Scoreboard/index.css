@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Digital Display';
-    src: url('http://truefonts.blogspot.com/2012/11/digital-display-tfb.html') format('ttf');
+    src: url('assets/digital display tfb.ttf');
     
     font-weight: normal;
     font-style: normal;
@@ -8,8 +8,8 @@
 }
 
 :root{
-    --background-color: rgb(5, 5, 5);
-    --background-color1: rgb(6, 42, 139);
+    --background-color: rgba(5, 5, 5, 0);
+    --background-color1: rgb(5, 29, 92);
     --text-color1: rgb(255, 0, 0); 
     --text-color2: rgb(255, 255, 255); 
 }
@@ -137,22 +137,4 @@ button {
 
 button:hover {
     background-color: rgb(0, 7, 100);
-}
-
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    padding: 10px 0 10px 0;
-    background-color: #090909;
-}
-
-.footer {
-    font-size: small;
-    margin: 5px 0 5px 20px;
-    color: var(--text-color2);
-}
-
-a {
-    color: var(--text-color2);
 }
