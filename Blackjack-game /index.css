@@ -1,22 +1,36 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
-    background-image: url("image.png");
-    background-size: cover;
+    /* background-image: url("image.png"); */
+    /* background-size: cover; */
     font-weight: bold;
     font-size: 3em;
     color: black;
-    text-align: center;
-    
+    text-align: center; 
 } 
 
 h1 {
-    color: #016f32;
+    color: goldenrod;
 }
 
 #message-el {
     font-style: italic;
 }
 
+.content{
+    /* position: absolute; */
+    top: 0; 
+    margin: 0 auto; 
+    background: #016f32;
+    color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  img{
+    overflow:hidden;
+    position: relative; 
+    height: 500px;
+    margin: 0 auto; 
+ }
 button {
     color: #016f32;
     width: 150px;
