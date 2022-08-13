@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main>
+    <section>
+      <h1>Generate a<br><span>random password</span></h1>
+      <h2>Strong and secure passwords available at one click</h2>
+    </section>
+
+    <section>
+      <button>Generate Password</button>
+    </section>
+
+    <section>
+      <div>
+        <label for="passwordLength">Password length</label>
+
+        <button id="addBtn" data-type="add" title="Add 1"
+          aria-controls="spinner-input">+</button>
+        <input onkeypress="return false" id="passwordLength" type="number" name="passwordLength" value="8" min="8"
+          max="30">
+        <button id="subsBtn" data-type="subtract" title="Subtract 1"
+          aria-controls="spinner-input">-</button>
+      </div>
+      <div>
+        <label for="passwordLowercase">Lowercase characters</label>
+        <input checked type="checkbox" id="passwordLowercase" name="passwordLowercase">
+      </div>
+      <div>
+        <label for="passwordUppercase">Uppercase characters</label>
+        <input checked type="checkbox" id="passwordUppercase" name="passwordUppercase">
+      </div>
+      <div>
+        <label for="passwordSymbols">Symbols</label>
+        <input checked type="checkbox" id="passwordSymbols" name="passwordSymbols">
+      </div>
+      <div>
+        <label for="passwordNumbers">Numbers</label>
+        <input checked type="checkbox" id="passwordNumbers" name="passwordNumbers">
+      </div>
+    </section>
+
+    <section>
+      <div class="randomPassword"></div>
+      <div class="randomPassword"></div>
+      <div class="randomPassword"></div>
+      <div class="randomPassword"></div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
