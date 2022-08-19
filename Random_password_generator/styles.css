@@ -9,7 +9,6 @@
   body {
 	width: 100%;
 	height: 100%;
-	/* background-image: -webkit-gradient(linear, left bottom, left top, color-stop(100%, #209cff), color-stop(200%, #68e0cf)); */
 	background-image: linear-gradient(to top, #8f70d7 150%, #2dd2bc 200%);
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -41,9 +40,11 @@
   
   .container h2.title {
 	font-size: 1.75rem;
-	margin: 10px -5px;
-	margin-bottom: 30px;
+	margin: 20px -5px;
+	margin-bottom: 20px;
 	color:#2dd2bc;
+	text-align: center;
+	font-weight: bolder;
   }
   
   .result {
@@ -185,8 +186,7 @@
 	border-radius: 50%;
 	background: white;
 	cursor: pointer;
-	-webkit-transition: background 0.15s ease-in-out;
-	transition: background 0.15s ease-in-out;
+
   }
   
   #slider::-moz-range-thumb:hover {
