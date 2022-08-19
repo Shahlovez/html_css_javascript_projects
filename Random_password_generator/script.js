@@ -1,7 +1,7 @@
 console.clear();
 const sliderProps = {
-	fill: "#0B1EDF",
-	background: "rgba(255, 255, 255, 0.214)",
+	fill: "#0B1EDC",
+	background: "rgba(255, 255, 255, 0.220)",
 };
 // Selecting the Range Slider container which will effect the LENGTH property of the password.
 const slider = document.querySelector(".range__slider")
@@ -72,7 +72,7 @@ const copyInfo = document.querySelector(".result__info.right");
 // Text appear after copy button is clicked
 const copiedInfo = document.querySelector(".result__info.left");
 
-// if this variable is trye only then the copyBtn will appear, i.e. when the user first click generate the copyBth will interact.
+// if this variable is true only then the copyBtn will appear, i.e. when the user first click generate the copyBth will interact.
 let generatedPassword = false;
 
 // Update Css Props of the COPY button
@@ -81,47 +81,6 @@ let resultContainerBound = {
 	left: resultContainer.getBoundingClientRect().left,
 	top: resultContainer.getBoundingClientRect().top,
 };
-// This will update the position of the copy button based on mouse Position
-resultContainer.addEventListener("mousemove", e => {
-	resultContainerBound = {
-		left: resultContainer.getBoundingClientRect().left,
-		top: resultContainer.getBoundingClientRect().top,
-	};
-	if(generatedPassword){
-		copyBtn.style.opacity = '1';
-		copyBtn.style.pointerEvents = 'all';
-		copyBtn.style.setProperty("--x", `${e.x - resultContainerBound.left}px`);
-		copyBtn.style.setProperty("--y", `${e.y - resultContainerBound.top}px`);
-	}else{
-		copyBtn.style.opacity = '0';
-		copyBtn.style.pointerEvents = 'none';
-	}
-});
-window.addEventListener("resize", e => {
-	resultContainerBound = {
-		left: resultContainer.getBoundingClientRect().left,
-		top: resultContainer.getBoundingClientRect().top,
-	};
-});
-
-// Copy Password in clipboard
-copyBtn.addEventListener("click", () => {
-	const textarea = document.createElement("textarea");
-	const password = resultEl.innerText;
-	if (!password || password == "CLICK GENERATE") {
-		return;
-	}
-	textarea.value = password;
-	document.body.appendChild(textarea);
-	textarea.select();
-	document.execCommand("copy");
-	textarea.remove();
-
-	copyInfo.style.transform = "translateY(200%)";
-	copyInfo.style.opacity = "0";
-	copiedInfo.style.transform = "translateY(0%)";
-	copiedInfo.style.opacity = "0.75";
-});
 
 // When Generate is clicked Password id generated.
 generateBtn.addEventListener("click", () => {
@@ -172,4 +131,5 @@ function disableOnlyCheckbox(){
 		disableOnlyCheckbox()
 	})
 })
+
 
