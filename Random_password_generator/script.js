@@ -16,7 +16,7 @@ slider.querySelector("input").addEventListener("input", event => {
 });
 // Selecting the range input and passing it in the applyFill func.
 applyFill(slider.querySelector("input"));
-// This function is responsible to create the trailing color and setting the fill.
+// // This function is responsible to create the trailing color and setting the fill.
 function applyFill(slider) {
 	const percentage = (100 * (slider.value - slider.min)) / (slider.max - slider.min);
 	const bg = `linear-gradient(90deg, ${sliderProps.fill} ${percentage}%, ${sliderProps.background} ${percentage +
@@ -49,8 +49,7 @@ function getRandomSymbol() {
 	const symbols = '~!@#$%^&*()_+{}":?><;.,';
 	return symbols[Math.floor(Math.random() * symbols.length)];
 }
-// Selecting all the DOM Elements that are necessary -->
-
+// Selecting DOM Elements that are necessary -->
 // The Viewbox where the result will be shown
 const resultEl = document.getElementById("result");
 // The input slider, will use to change the length of the password
@@ -63,24 +62,8 @@ const symbolEl = document.getElementById("symbol");
 
 // Button to generate the password
 const generateBtn = document.getElementById("generate");
-// Button to copy the text
-const copyBtn = document.getElementById("copy-btn");
 // Result viewbox container
 const resultContainer = document.querySelector(".result");
-// Text info showed after generate button is clicked
-const copyInfo = document.querySelector(".result__info.right");
-// Text appear after copy button is clicked
-const copiedInfo = document.querySelector(".result__info.left");
-
-// if this variable is true only then the copyBtn will appear, i.e. when the user first click generate the copyBth will interact.
-let generatedPassword = false;
-
-// Update Css Props of the COPY button
-// Getting the bounds of the result viewbox container
-let resultContainerBound = {
-	left: resultContainer.getBoundingClientRect().left,
-	top: resultContainer.getBoundingClientRect().top,
-};
 
 // When Generate is clicked Password id generated.
 generateBtn.addEventListener("click", () => {
@@ -91,7 +74,7 @@ generateBtn.addEventListener("click", () => {
 	const hasSymbol = symbolEl.checked;
 	generatedPassword = true;
 	resultEl.innerText = generatePassword(length, hasLower, hasUpper, hasNumber, hasSymbol);
-	copyInfo.style.transform = "translateY(0%)";
+	// copyInfo.style.transform = "translateY(0%)";
 	copyInfo.style.opacity = "0.75";
 	copiedInfo.style.transform = "translateY(200%)";
 	copiedInfo.style.opacity = "0";
