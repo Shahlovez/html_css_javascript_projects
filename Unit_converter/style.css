@@ -5,6 +5,7 @@
   
   body {
     font-family:Arial, Helvetica, sans-serif;
+    /* font-size: 25px; */
     max-width: 100vw;
     min-height: 100vh;
     display: flex;
@@ -37,24 +38,8 @@
     padding-top:5px;
     padding-bottom: 10px;
   }
-  
-  /* .display-area input {
-    border: 1px solid grey;
-    border-radius: 10px; 
-    outline: none;
-    width: 300px;
-    background: none;
-    font-weight: 800;
-    font-size:50px;
-    text-align: center;
-    color: #ffffff;
-    padding: 10px;
-    display: inline-block;
-    clear: left;
-    width: 250px;
-    /* margin-left: 130px;  */
-  
-    #input-el{
+
+  #input-el{
         display: block;
         margin-left: 200px;
         color: black;
@@ -117,7 +102,6 @@
   .length-box,
   .volume-box,
   .mass-box {
-    /* border: 1px solid #585dfe;  */
     margin-top: 20px;
     line-height: 20px;
     padding-top: 20px;
