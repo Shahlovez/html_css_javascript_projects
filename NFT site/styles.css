@@ -37,7 +37,7 @@ a{
 }
 
 a:hover, a:active{
-    color: #d4b44c;
+    color: #634cd4;
 }
 
 .btn-dark, 
@@ -83,7 +83,7 @@ header, section, footer{
 }
 
 header, .section-two{
-    background-color: #5f29a3;
+    background-color: #3a176c;
 }
 
 .section-two{
@@ -110,6 +110,7 @@ header, .section-two{
 }
 
 footer{
+    height: 20px;
     text-align: center;
     color: #5f29a3;
 }
